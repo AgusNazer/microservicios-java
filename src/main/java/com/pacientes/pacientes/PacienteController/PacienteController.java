@@ -1,4 +1,4 @@
-package com.pacientes.pacientes;
+package com.pacientes.pacientes.PacienteController;
 
 import java.util.List;
 
@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.pacientes.pacientes.model.Paciente;
 import com.pacientes.pacientes.services.IPacienteService;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.PutMapping;
 
 

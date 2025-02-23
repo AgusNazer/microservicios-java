@@ -7,5 +7,6 @@ import com.pacientes.pacientes.model.Paciente;
 
 @Repository
 public interface IPacienteRepository extends JpaRepository<Paciente, Long> {
+    
 }
 
