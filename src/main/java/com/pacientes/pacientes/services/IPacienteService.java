@@ -5,6 +5,8 @@ import java.util.List;
 import com.pacientes.pacientes.model.Paciente;
 
 public interface IPacienteService {
+    
+    
 
     public List<Paciente> getPacientes();
 
