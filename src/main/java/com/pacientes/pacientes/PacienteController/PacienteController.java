@@ -33,9 +33,10 @@ public class PacienteController {
     public List<Paciente> obtenerPacientes(){
         return pacienteService.getPacientes();
     }
-    @GetMapping("/pacientes/{id}")
-    public Paciente getById(@PathVariable Long id) {
-        return pacienteService.findPaciente(id);
+    // Traemos el paciente segun dni por aprametro, lo usamos desde el servicio turno RestTemplate
+    @GetMapping("/pacientes/{dni}")
+    public Paciente getBydni(@PathVariable String dni) {
+        return pacienteService.findPacienteByDni(dni);
     }
     @DeleteMapping("/pacientes/delete/{id}")
     public String deletePaciente(@PathVariable Long id){

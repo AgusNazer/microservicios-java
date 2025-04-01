@@ -40,6 +40,11 @@ public class PacienteService implements IPacienteService {
         return pacienteRepo.findById(id).orElse(null);
     }
 
+    @Override
+    public Paciente findPacienteByDni(String dni){
+        return pacienteRepo.findByDni(dni);
+    }
+
     // @Override
     // public Paciente findPacienteByDni(String dni) {
     //     return pacienteRepo.findPacienteByDni(dni)

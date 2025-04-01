@@ -18,6 +18,6 @@ public interface IPacienteService {
 
     public Paciente findPaciente(Long id);
     
-    // public Paciente findPacienteByDni(String dni);
+    public Paciente findPacienteByDni(String dni);
 
 }
